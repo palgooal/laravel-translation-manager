@@ -1,0 +1,34 @@
+{
+    "name": "palgoals/translation-manager",
+    "description": "Laravel Translation Manager - Manage all your translations with an admin panel (languages + translations + locale switch).",
+    "keywords": ["laravel", "translation", "languages", "translation manager", "multilingual"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Palgoals",
+            "email": "palgooal@gmail.com",
+            "homepage": "https://github.com/palgooal"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Palgoals\\TranslationManager\\": "src/"
+        },
+        "files": [
+            "src/Helpers/TranslationHelper.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Palgoals\\TranslationManager\\TranslationManagerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
